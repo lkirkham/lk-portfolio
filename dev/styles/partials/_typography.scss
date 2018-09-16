@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Playfair+Display:400,900");
+
+
+// font mixins //
+@mixin headingFont($fontSize) {
+  font-size: $fontSize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+@mixin bodyFont($fontSize) {
+  font-size: $fontSize;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+}
+
+@mixin lineHeight($lineHeight) {
+  line-height: $lineHeight;
+}
+
+// headings //
+h1 {
+  @include headingFont(5rem);
+}
+
+h2 {
+  @include headingFont(3.5rem);
+  @include lineHeight(1.2);
+}
+
+h3 {
+  @include headingFont(2rem);
+  @include lineHeight(1.1);
+}
+
+// body //
+p {
+  @include bodyFont(1.6rem);
+  line-height: 1.25;
+}

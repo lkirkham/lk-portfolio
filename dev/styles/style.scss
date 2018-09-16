@@ -1,0 +1,50 @@
+@import "./partials/_setup.scss";
+@import "./partials/_global.scss";
+@import "./partials/_typography.scss";
+
+//header
+
+header{
+  nav{
+  ul{
+    margin:0px 0px;
+    padding:0;
+  }
+}
+}
+
+
+//header ends
+
+//Intro
+.intro {
+  background-color: $lightpink;
+  height: 100vh;
+}
+
+.wrapper{
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.introWrapper{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 100px;
+  grid-gap: 15px;
+  .introFig{
+    grid-row: span 2;
+  }
+}
+
+.introContent  {
+  margin:0;
+  .introHeading{
+    display: inline-block;
+    color: $redpink;
+  }
+  .introCopy{
+
+  }
+}
+//Intro ends
