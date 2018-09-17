@@ -25,16 +25,21 @@ h1 {
 
 h2 {
   @include headingFont(3.5rem);
-  @include lineHeight(1.2);
+  @include lineHeight(1);
 }
 
 h3 {
-  @include headingFont(2rem);
-  @include lineHeight(1.1);
+  @include headingFont(3rem);
+  @include lineHeight(1);
+}
+
+h4 {
+  @include bodyFont(1.8rem);
+  @include lineHeight(1);
 }
 
 // body //
 p {
   @include bodyFont(1.6rem);
-  line-height: 1.25;
+  line-height: 1.5;
 }

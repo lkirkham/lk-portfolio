@@ -143,6 +143,16 @@ img {
   width: 100%;
   display: block; }
 
+.btn {
+  background-color: transparent;
+  color: #cf4436;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  border: solid 2px #cf4436;
+  border-radius: 2px;
+  padding: 15px 30px; }
+
 h1 {
   font-size: 5rem;
   font-family: 'Montserrat', sans-serif;
@@ -152,19 +162,25 @@ h2 {
   font-size: 3.5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  line-height: 1.2; }
+  line-height: 1; }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  line-height: 1.1; }
+  line-height: 1; }
+
+h4 {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1; }
 
 p {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  line-height: 1.25; }
+  line-height: 1.5; }
 
 header nav ul {
   margin: 0px 0px;
@@ -190,11 +206,7 @@ header nav ul {
         object-fit: cover; }
       .intro .wrapper .introWrapper .introContent {
         margin: 0 0 0 50px;
-        flex: 0 0 calc(70%);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start; }
+        flex: 0 0 calc(70%); }
         .intro .wrapper .introWrapper .introContent .introHeading {
           display: inline-block;
           color: #cf4436;
@@ -234,3 +246,35 @@ header nav ul {
             margin-bottom: 42px; }
           .intro .wrapper .skills ul li .restful {
             margin-bottom: 12px; }
+
+.projects .wrapper .project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0; }
+  .projects .wrapper .project .projectImage {
+    flex: 0 0 40%; }
+  .projects .wrapper .project .projectContent {
+    flex: 0 0 calc(60% -50px);
+    margin: 0 0 0 50px; }
+    .projects .wrapper .project .projectContent .projectHeading {
+      color: #cf4436;
+      margin: 15px 0; }
+    .projects .wrapper .project .projectContent .projectSubheading {
+      color: #cf4436;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 1.6rem; }
+    .projects .wrapper .project .projectContent .projectTags {
+      margin: 0;
+      display: flex;
+      flex-direction: row; }
+      .projects .wrapper .project .projectContent .projectTags .projectTag {
+        margin: 10px 0;
+        padding: 0 25px 0 0;
+        text-transform: uppercase;
+        font-size: 1rem; }
+
+.projectImage {
+  width: 40%; }

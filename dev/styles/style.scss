@@ -41,10 +41,6 @@ header {
       .introContent {
         margin: 0 0 0 50px;
         flex: 0 0 calc(70%);
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
         .introHeading {
           display: inline-block;
           color: $redpink;
@@ -104,3 +100,54 @@ header {
 }
 
 //Intro ends
+
+//Portfolio
+.projects {
+  .wrapper{
+
+    .project{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 100px 0;
+      .projectImage{
+        flex: 0 0 40%;
+        img{}
+      }
+      .projectContent{
+        flex: 0 0 calc(60% -50px);
+        margin: 0 0 0 50px;
+        .projectHeading{
+          color: $redpink;
+          margin:15px 0;
+        }
+        .projectSubheading{
+          color: $redpink;
+          text-transform: uppercase;
+          margin:0;
+          font-size: 1.6rem;
+        }
+        .projectTags{
+          margin:0;
+          display:flex;
+          flex-direction: row;
+          .projectTag{
+            margin:10px 0;
+            padding: 0 25px 0 0;
+            text-transform: uppercase;
+            font-size: 1rem;
+
+
+          }
+        }
+        .projectCopy{}
+      }
+    }
+  }
+}
+.projectImage{
+  width:40%;
+}
+
+//Portfolio Ends
