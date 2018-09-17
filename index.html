@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="./public/styles/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Laura Kirkham | Front-End Developer</title>
 </head>
 
 <body>
@@ -19,13 +20,27 @@
   </nav>
 </heading> -->
   <section class="hero">
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <h1>Hi, I'm Laura.</h1>
+    </div>
   </section>
   <section class="intro">
     <div class="wrapper">
       <div class="introWrapper">
         <figure class="introFig">
-          <img src="./assets/me2.jpg" alt="Laura Kirkham">
+          <!-- Down hand drawn arrow by Kid A from the Noun Project -->
+          <p class="handWritten introImgNote">That's me!</p>
+          <!-- svg starts -->
+          <svg class="handDrawnArrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 100 125" style="enable-background:new 0 0 100 125;" xml:space="preserve">
+            <path class="st0 handDrawnArrow" d="M37.8,73.7c7.2,6.7,15.8,11.6,24.8,15.5c6.9,2.8,14.1,4.9,21.3,6.6c-7.7,1.4-15.3,3.5-22.5,6.6
+	c-2.6,1.1,2.1,6.4,4.3,5.5c9.7-4,19.9-6.6,30.4-7.7c2.9-0.3,0.2-4.4-2.1-5.4c-0.2-0.3-0.3-0.6-0.5-0.8c-4.4-6.3-8.6-12.7-12.3-19.5
+	c-0.8-1.4-2.3-2.9-4-2.9c-1.7,0-1.4,1.7-0.8,2.8c3.4,6,7.1,11.6,10.9,17.3c-15.8-3.7-32-8-44.8-18.5c-6.4-5.4-12-12.1-16.6-19.2
+	c-4.3-6.7-8-14.1-10.6-21.8c-3.1-8.7-4.8-17.9-5.4-27.1C9.9,3.5,8.3,2,7,1.4C5.9,0.9,4.2,0.6,4.3,2.3C5.4,19.8,10.8,37.1,20,51.9
+	C25,59.6,30.9,67.3,37.8,73.7z" />
+          </svg>
+          <!-- svg ends -->
+          <img src="./assets/me3.jpg" alt="Laura Kirkham">
         </figure>
         <div class="introContent">
           <h2 class="introHeading">I am&nbsp;<span id="introHeading"></span></h2>
@@ -140,9 +155,9 @@
   </section>
   <section class="projects">
     <div class="wrapper">
-      <div class="project">
-        <figure class="projectImage"><img src="./assets/portfolioPlonk.jpg" alt="Screenshot of Plonk Wine Finder"></figure>
-        <div class="projectContent">
+      <div class="project" data-aos="fade-right" data-aos-offset="250" data-aos-easing="ease-in-out" data-aos-duration="600">
+        <figure class="projectImage plonkImage"><img src="./assets/portfolioPlonkScreensV2.jpg" alt="Screenshot of Plonk Wine Finder"></figure>
+        <div class="projectContent plonkContent">
           <h3 class="projectHeading">Plonk</h3>
           <h4 class="projectSubheading">Full Stack React Application</h4>
           <div class="projectTags">
@@ -159,56 +174,105 @@
             velit aliquet.
             Quis eleifend quam adipiscing vitae proin. Egestas egestas fringilla phasellus faucibus scelerisque
             eleifend donec.
-            </p>
-          <button class="btn">View Live</button>
+          </p>
+          <div class="buttons">
+            <button class="btn">View Live</button>
+            <button class="iconBtn"><i class="fab fa-github"></i></button>
+          </div>
         </div>
+      </div>
+      <div class="handWrittenPNote1" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="600">
+        <!-- Heart by Ale Estrada from the Noun Project -->
+        <!-- svg starts -->
+        <svg class="handDrawnHeart" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.87 89.69">
+          <title>handDrawnHeart</title>
+          <path class="handDrawnHeart" d="M76.38,6.28C68.22,3.2,59.15,7.85,54.74,14.82c-3,4.68-4.18,10.22-5,15.64-.34,2.39-.64,4.79-.93,7.2A50,50,0,0,0,38.67,25c-4.37-3.89-15.83-13.7-21-6.56-5.55,7.67-2.68,18.73,1,26.5,4,8.44,9.86,16.19,15.86,23.29A146.48,146.48,0,0,0,57.54,90l-.06.22C56.13,95,63.61,97.07,65,92.26c5.86-20.89,16.76-40.33,19.86-62C86.08,21.52,86.31,10,76.38,6.28ZM54.11,52.22A1.62,1.62,0,0,0,54,52l.17-.17C54.15,52,54.13,52.1,54.11,52.22Zm-16.34-11c.32,1,.64,2,1,2.93q-2-3-3.93-6.09Q36.33,39.61,37.77,41.21Zm20.6,37.64c.46,1,.93,2.07,1.38,3.1q-1.77-1.41-3.5-2.88A3.31,3.31,0,0,0,58.37,78.85ZM72.81,13.27c5,1.12,5.19,7,4.92,11.14v0a3.5,3.5,0,0,0-2.5,1.87,120.37,120.37,0,0,0-7,15.28q1.2-13,3.53-25.83a4.21,4.21,0,0,0-.4-2.67A8.21,8.21,0,0,1,72.81,13.27ZM59.54,22.44A133.79,133.79,0,0,0,57,35.85c-.2,1.11-.4,2.22-.59,3.34.28-2.4.58-4.8.93-7.19A44.82,44.82,0,0,1,59.54,22.44ZM40.7,63.55c-6.05-7-12.13-15-15.81-23.55a31.25,31.25,0,0,1-2.23-7.27c.6,1,1.21,2,1.71,2.9,2.83,5,5.93,9.92,9.21,14.69,6.24,9.09,13.09,17.75,20,26.39A141,141,0,0,1,40.7,63.55Z"
+            transform="translate(-14.56 -5.31)" />
+        </svg>
+
+        <p class="handWritten portfolioNote">My<br>personal<br>fave.</p>
+        <!-- svg ends -->
+      </div>
+      <!-- closes portfolio note div -->
+      <div class="project" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-duration="600">
+        <figure class="projectImage plantParenthoodImage">
+          <img src="./assets/portfolioPlantParenthoodScreensV1.jpg" alt="Screenshot of Plant Parenthood application"></figure>
+        <div class="projectContent plantParenthoodContent">
+          <h3 class="projectHeading">Plant Parenthood</h3>
+          <h4 class="projectSubheading">Full Stack React Application</h4>
+          <div class="projectTags">
+            <h5 class="projectTag">React</h5>
+            <h5 class="projectTag">Firebase</h5>
+            <h5 class="projectTag">Sass</h5>
+          </div>
+          <p class="projectCopy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Nibh venenatis cras sed felis eget
+            velit
+            aliquet.
+            Quis eleifend quam adipiscing vitae proin. Egestas egestas fringilla phasellus faucibus scelerisque
+            eleifend
+            donec.
+          </p>
+          <div class="buttons">
+            <button class="btn">View Live</button>
+            <button class="iconBtn"><i class="fab fa-github"></i></button>
+          </div>
         </div>
-        <div class="project">
-          <figure class="projectImage"><img src="./assets/portfolioPlantParenthood.jpg" alt="Screenshot of Plant Parenthood application"></figure>
-          <div class="projectContent">
-            <h3 class="projectHeading">Plant Parenthood</h3>
-            <h4 class="projectSubheading">Full Stack React Application</h4>
-            <div class="projectTags">
-              <h5 class="projectTag">React</h5>
-              <h5 class="projectTag">Firebase</h5>
-              <h5 class="projectTag">Sass</h5>
-            </div>
-            <p class="projectCopy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna
-              aliqua. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Nibh venenatis cras sed felis eget
-              velit
-              aliquet.
-              Quis eleifend quam adipiscing vitae proin. Egestas egestas fringilla phasellus faucibus scelerisque
-              eleifend
-              donec.
-             </p>
+      </div>
+      <div class="project" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <figure class="projectImage cootieCatcherImage"><img src="./assets/portfolioCootieCatcherScreensV1.jpg" alt="Screenshot of Cootie Catcher jQuery game"></figure>
+        <div class="projectContent cootieCatcherContent">
+          <h3 class="projectHeading">Cootie Catcher</h3>
+          <h4 class="projectSubheading">jQuery Game</h4>
+          <div class="projectTags">
+            <h5 class="projectTag">JavaScript</h5>
+            <h5 class="projectTag">jQuery</h5>
+            <h5 class="projectTag">Sass</h5>
+
+          </div>
+          <p class="projectCopy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Nibh venenatis cras sed felis eget
+            velit
+            aliquet.
+            Quis eleifend quam adipiscing vitae proin. Egestas egestas fringilla phasellus faucibus scelerisque
+            eleifend
+            donec.
+          </p>
+          <div class="buttons">
+            <button class="btn">View Live</button>
+            <button class="iconBtn"><i class="fab fa-github"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="project" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <figure class="projectImage freedomImage"><img src="./assets/portfolioFreedomScreensV1.jpg" alt="Screenshot of Cootie Catcher jQuery game"></figure>
+        <div class="projectContent freedomContent">
+          <h3 class="projectHeading">Freedom Mobile</h3>
+          <h4 class="projectSubheading">Brand website</h4>
+          <div class="projectTags">
+            <h5 class="projectTag">Product Owner</h5>
+            <h5 class="projectTag">HTML</h5>
+            <h5 class="projectTag">CSS</h5>
+            <h5 class="projectTag">Copywriting</h5>
+
+          </div>
+          <p class="projectCopy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Nibh venenatis cras sed felis eget
+            velit
+            aliquet.
+            Quis eleifend quam adipiscing vitae proin. Egestas egestas fringilla phasellus faucibus scelerisque
+            eleifend
+            donec.
+          </p>
+          <div class="buttons">
             <button class="btn">View Live</button>
           </div>
-          </div>
-          <div class="project">
-            <figure class="projectImage"><img src="./assets/portfolioCootieCatcher.jpg" alt="Screenshot of Cootie Catcher jQuery game"></figure>
-            <div class="projectContent">
-              <h3 class="projectHeading">Cootie Catcher Fortune Teller</h3>
-              <h4 class="projectSubheading">jQuery Game</h4>
-              <div class="projectTags">
-                <h5 class="projectTag">JavaScript</h5>
-                <h5 class="projectTag">jQuery</h5>
-                <h5 class="projectTag">Sass</h5>
-
-              </div>
-              <p class="projectCopy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna
-                aliqua. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Nibh venenatis cras sed felis eget
-                velit
-                aliquet.
-                Quis eleifend quam adipiscing vitae proin. Egestas egestas fringilla phasellus faucibus scelerisque
-                eleifend
-                donec.
-              </p>
-              <button class="btn">View Live</button>
-            </div>
-          </div>
+        </div>
       </div>
+    </div>
   </section>
 
 

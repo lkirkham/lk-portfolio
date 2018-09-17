@@ -3,6 +3,7 @@
 $lightpink: #eed9d4;
 $redpink: #cf4436;
 $grey: #4a4a4a;
+$white: #fff;
 
 html {
   font-size: 62.5%;
@@ -22,10 +23,21 @@ img{
   background-color: transparent;
   color: $redpink;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.6rem;
-  // text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
   border: solid 2px $redpink;
   border-radius: 2px;
   padding: 15px 30px;
+  &:hover{
+    color: $white;
+    background-color: $redpink;
+  }
+}
+
+.iconBtn{
+  background-color: transparent;
+  color: $redpink;
+  font-size: 4.5rem;
+  border:none;
 }

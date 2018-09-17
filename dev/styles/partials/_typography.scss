@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Playfair+Display:400,900");
-
+@import url("https://fonts.googleapis.com/css?family=Cedarville+Cursive");
 
 // font mixins //
 @mixin headingFont($fontSize) {
@@ -18,9 +18,14 @@
   line-height: $lineHeight;
 }
 
+@mixin handWrittenFont($fontSize){
+  font-size: $fontSize;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
 // headings //
 h1 {
-  @include headingFont(5rem);
+  @include headingFont(10rem);
 }
 
 h2 {
@@ -42,4 +47,8 @@ h4 {
 p {
   @include bodyFont(1.6rem);
   line-height: 1.5;
+}
+
+.handWritten{
+@include handWrittenFont(2.5rem);
 }
