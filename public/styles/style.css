@@ -135,6 +135,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
+.wrapper {
+  width: 1020px;
+  margin: 0 auto; }
+
 img {
   width: 100%;
   display: block; }
@@ -158,7 +162,7 @@ h3 {
 
 p {
   font-size: 1.6rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   line-height: 1.25; }
 
@@ -169,21 +173,64 @@ header nav ul {
 .intro {
   background-color: #eed9d4;
   height: 100vh; }
-
-.wrapper {
-  width: 1020px;
-  margin: 0 auto; }
-
-.introWrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 100px 100px;
-  grid-gap: 15px; }
-  .introWrapper .introFig {
-    grid-row: span 2; }
-
-.introContent {
-  margin: 0; }
-  .introContent .introHeading {
-    display: inline-block;
-    color: #cf4436; }
+  .intro .wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .intro .wrapper .introWrapper {
+      display: flex;
+      height: 50vh;
+      align-items: center; }
+      .intro .wrapper .introWrapper .introFig {
+        flex: 0 0 30%;
+        border-radius: 2px;
+        border: 5px solid #cf4436;
+        object-fit: cover; }
+      .intro .wrapper .introWrapper .introContent {
+        margin: 0 0 0 50px;
+        flex: 0 0 calc(70%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+        .intro .wrapper .introWrapper .introContent .introHeading {
+          display: inline-block;
+          color: #cf4436;
+          margin: 15px 0; }
+        .intro .wrapper .introWrapper .introContent .introCopy {
+          color: #cf4436; }
+    .intro .wrapper .skills {
+      height: 50vh;
+      display: flex;
+      align-items: center; }
+      .intro .wrapper .skills ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start; }
+        .intro .wrapper .skills ul li {
+          color: #cf4436;
+          padding: 0 25px 25px 0;
+          font-size: 7rem;
+          text-align: center;
+          width: 140px; }
+          .intro .wrapper .skills ul li p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center; }
+          .intro .wrapper .skills ul li .firebaseIcon {
+            margin: 0 auto;
+            width: 38px;
+            margin-bottom: 40px; }
+          .intro .wrapper .skills ul li .jqueryIcon {
+            margin: 0 auto;
+            width: 52px;
+            margin-bottom: 42px; }
+          .intro .wrapper .skills ul li .restful {
+            margin-bottom: 12px; }
