@@ -1,0 +1,44 @@
+//hero starts
+.hero {
+  height: 100vh;
+  background-image: url(../../assets/rawpixel-539830-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: $redpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  margin: 80px 0 15px 0;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 25px 0;
+}
+
+.hero i {
+  color: $redpink;
+  font-size: 7rem;
+  padding: 25px;
+  animation: 1s infinite  pulse;
+}
+
+//hero ends
+@media (max-width: 1290px) {
+    h1{
+      font-size: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+      h1{
+      font-size: 4rem;
+  }
+}
+
+

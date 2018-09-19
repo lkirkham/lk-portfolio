@@ -1,6 +1,12 @@
 import Typed from "typed.js";
 import AOS from "aos";
 
+// // Start midnight
+// $(document).ready(function () {
+//   // Change this to the correct selector for your nav.
+//   $(".hamburger label").midnight();
+// });
+
 
 //typed JS
 var introHeading = new Typed("#introHeading", {
@@ -9,8 +15,8 @@ var introHeading = new Typed("#introHeading", {
     "a web designer.",
     "a digital product manager.",
   ],
-  typeSpeed: 10,
-  backSpeed: 10,
+  typeSpeed: 50,
+  backSpeed: 40,
   smartBackspace: true,
   loop: true
 });
@@ -18,6 +24,8 @@ var introHeading = new Typed("#introHeading", {
 
 //animate on scroll library
 AOS.init();
+
+
 
 // // You can also pass an optional settings object
 // // below listed default settings
@@ -38,3 +46,23 @@ AOS.init();
 //   mirror: false, // whether elements should animate out while scrolling past them
 //   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 // });
+
+
+(function () {
+
+  var hamburger = {
+    navToggle: document.querySelector('.nav-toggle'),
+    nav: document.querySelector('nav'),
+
+    doToggle: function (e) {
+      e.preventDefault();
+      this.navToggle.classList.toggle('expanded');
+      this.nav.classList.toggle('expanded');
+    }
+  };
+
+  hamburger.navToggle.addEventListener('click', function (e) { hamburger.doToggle(e); });
+  hamburger.nav.addEventListener('click', function (e) { hamburger.doToggle(e); });
+
+}());
+

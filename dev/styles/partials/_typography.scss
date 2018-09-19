@@ -26,11 +26,13 @@
 // headings //
 h1 {
   @include headingFont(10rem);
+  color: $redpink;
 }
 
 h2 {
   @include headingFont(3.5rem);
   @include lineHeight(1);
+  color: $redpink;
 }
 
 h3 {
@@ -49,6 +51,24 @@ p {
   line-height: 1.5;
 }
 
+a {
+  @include headingFont(2.5rem);
+  line-height: 1.5;
+}
+
 .handWritten{
 @include handWrittenFont(2.5rem);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+// media queries
+@media (max-width: 450px) {
+h2 {
+  @include headingFont(3rem);
+  @include lineHeight(1);
+  color: $redpink;
+}
 }

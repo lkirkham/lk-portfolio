@@ -2,16 +2,14 @@
 //colors
 $lightpink: #eed9d4;
 $redpink: #cf4436;
+$lightredpink: rgba(207, 68, 54, 0.5);
+$peach: #fba594;
 $grey: #4a4a4a;
 $white: #fff;
+$redpinklight: rgba(207, 68, 54, .8);
 
 html {
   font-size: 62.5%;
-}
-
-.wrapper {
-  width: 1020px;
-  margin: 0 auto;
 }
 
 img{
@@ -24,11 +22,12 @@ img{
   color: $redpink;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   border: solid 2px $redpink;
   border-radius: 2px;
   padding: 15px 30px;
+  text-decoration: none;
   &:hover{
     color: $white;
     background-color: $redpink;
@@ -40,4 +39,37 @@ img{
   color: $redpink;
   font-size: 4.5rem;
   border:none;
+  &:hover{
+    color: pink;
+   
+  }
 }
+
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1290px) {
+  .wrapper{
+    width: 940px;
+  }
+}
+@media (max-width: 1080px) {
+  .wrapper{
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper{
+    width: 450px;
+  }
+}
+@media (max-width: 450px) {
+  .wrapper{
+    width: 310px;
+  }
+}
+
+

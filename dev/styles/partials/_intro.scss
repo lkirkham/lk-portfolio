@@ -1,0 +1,732 @@
+.intro {
+  background: $lightpink;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+    .introWrapper {
+      display: flex;
+      // height: 50vh;
+      padding: 0px 0px 50px 0px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .introFig {
+        flex: 1 1 30%;
+        border-radius: 2px;
+        border: 5px solid $redpink;
+        object-fit: cover;
+        position: relative;
+                img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+        .handDrawnArrow {
+          width: 60px;
+          fill: $redpink;
+          position: absolute;
+          left: -75px;
+          top: 15px;
+        }
+        .introImgNote {
+          fill: $redpink;
+          position: absolute;
+          left: -130px;
+          top: -50px;
+          color: $redpink;
+          transform: rotate(-20deg);
+        }
+        .tape{
+          position: absolute;
+        }
+        .t1{
+          width: 175px;
+          top:-20px;
+          right:-30px;
+          transform: rotate(10deg);
+        }
+        .t2{
+                    width: 130px;
+          bottom:-20px;
+          left:-40px;
+          transform: rotate(8deg);
+        }
+      }
+      .introContent {
+        margin: 0 0 0 50px;
+        flex: 1 1 calc(60%);
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .introHeading {
+          display: inline-block;
+          color: $redpink;
+          margin: 0 0 15px 0;
+        }
+        .introCopy {
+          color: $redpink;
+        }
+      }
+    }
+    .skillsHeading{
+      margin:15px 0;
+      text-align:left;
+      align-self:flex-start;
+    }
+    .skills {
+      // height: 50vh;
+      // background-color: $white;
+      padding: 50px 0px 25px 25px; //offsetting the 25px from each li
+      margin: 0 0 30px 0 0;
+      display: flex;
+      align-items: center;
+      border: solid 5px $redpink;
+      border-radius: 2px;
+      position: relative;
+
+      .toolboxNote {
+        fill: $redpink;
+        position: absolute;
+        right: 0px;
+        top: -80px;
+        color: $redpink;
+        transform: rotate(0deg);
+        text-align: right;
+      }
+      .handDrawnWrench {
+        width: 25px;
+        fill: $redpink;
+        position: absolute;
+        right: -30px;
+        top: -45px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          color: $redpink;
+          padding: 0 25px 25px 0;
+          font-size: 7rem;
+          text-align: center;
+          width: 160px;
+          p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+          }
+          .firebaseIcon {
+            margin: 0 auto;
+            width: 50px;
+            margin-bottom: 24px;
+          }
+          .jqueryIcon {
+            margin: 0 auto;
+            width: 65px;
+            margin-bottom: 30px;
+          }
+          .restful {
+            // margin-bottom: 12px;
+          }
+          // .responsiveIcon {
+          //   margin: 0 auto;
+          //   width: 60px;
+          //   margin-bottom: 18px;
+          // }
+        }
+      }
+    }
+  }
+}
+
+//Intro ends
+
+///////////////////////////////////////////////////// MEDIA QUERIES
+
+@media (max-width: 1290px) {
+.intro {
+  background-color: $lightpink;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+    .introWrapper {
+      display: flex;
+      // height: 50vh;
+      padding: 0px 0px 50px 0px;
+      align-items: flex-start;
+      .introFig {
+        flex: 1 1 40%; //change
+        border-radius: 2px;
+        border: 5px solid $redpink;
+        object-fit: cover;
+        position: relative;
+                img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+        .handDrawnArrow {
+          width:80px;
+          fill: $redpink;
+          position: absolute;
+          left: -30px;
+          top: 0px;
+          z-index: 1;
+          transform: rotate(5deg);
+        }
+        .introImgNote {
+          fill: $redpink;
+          position: absolute;
+          left: -70px;
+          top: -70px;
+          color: $redpink;
+          transform: rotate(-20deg);
+        }
+        img {
+        }
+      }
+      .introContent {
+        margin: 0 0 0 50px; //change
+        flex: 1 1 calc(60%);//changw
+
+        .introHeading {
+          display: inline-block;
+          color: $redpink;
+          margin: 15px 0;
+          font-size: 3rem;
+        }
+
+        .introCopy {
+          color: $redpink;
+          margin-top:0;
+        }
+      }
+    }
+    .skills {
+      // height: 50vh;
+      // background-color: $white;
+      padding: 50px 0px 25px 25px; 
+      margin: 0 0 30px 0 0;
+      display: flex;
+      align-items: center;
+      border: solid 5px $redpink;
+      border-radius: 2px;
+      position: relative;
+
+      .toolboxNote {
+        fill: $redpink;
+        position: absolute;
+        right: 0px;
+        top: -80px;
+        color: $redpink;
+        transform: rotate(0deg);
+        text-align: right;
+      }
+      .handDrawnWrench {
+        width: 25px;
+        fill: $redpink;
+        position: absolute;
+        right: -30px;
+        top: -45px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          color: $redpink;
+          padding: 0 25px 25px 0;
+          font-size: 6rem; //change
+          text-align: center;
+          width: 130px; //change
+          p {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+          }
+          .firebaseIcon {
+            margin: 0 auto;
+            width: 4.5rem;
+            margin-bottom: 20px;
+          }
+          .jqueryIcon {
+            margin: 0 auto;
+            width: 5.5rem;
+            margin-bottom: 30px;
+          }
+          .restful {
+            margin-bottom: 12px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+}//ends 1290mq
+
+@media (max-width: 1080px) {
+.intro {
+  background-color: $lightpink;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+    .introWrapper {
+      display: flex;
+      // height: 50vh;
+      padding: 0px 0px 50px 0px;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .introFig {
+        flex: 1 1 30%; //change
+        border-radius: 2px;
+        border: 5px solid $redpink;
+        object-fit: cover;
+        position: relative;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+        .handDrawnArrow {
+          width:80px;
+          fill: $redpink;
+          position: absolute;
+          left: -30px;
+          top: 0px;
+          z-index: 1;
+          transform: rotate(5deg);
+        }
+        .introImgNote {
+          fill: $redpink;
+          position: absolute;
+          left: -70px;
+          top: -70px;
+          color: $redpink;
+          transform: rotate(-20deg);
+        }
+        img {
+        }
+      }
+      .introContent {
+        margin: 0 auto; //change
+        flex: 1 1 calc(70%);//change
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+          .introHeading {
+            display: inline-block;
+            color: $redpink;
+            margin: 30px 0;
+            text-align:left;
+            align-self: flex-start;
+          }
+        .introCopy {
+          color: $redpink;
+          text-align:justify;
+        }
+      }
+    }
+    .skills {
+      // height: 50vh;
+      // background-color: $white;
+      padding: 50px 0px 25px 25px; 
+      margin: 0px 0px 0 0px;
+      display: flex;
+      align-items: center;
+      border: solid 5px $redpink;
+      border-radius: 2px;
+      position: relative;
+
+      .toolboxNote {
+        fill: $redpink;
+        position: absolute;
+        right: 44%;
+        top: -80px;
+        color: $redpink;
+        transform: rotate(0deg);
+        text-align: right;
+      }
+      .handDrawnWrench {
+        width: 25px;
+        fill: $redpink;
+        position: absolute;
+        right: 40%;
+        top: -45px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          color: $redpink;
+          padding: 0 25px 25px 0;
+          font-size: 7rem; //change
+          text-align: center;
+          width: 170px; //change
+          p {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+          }
+          .firebaseIcon {
+            margin: 0 auto;
+            width: 5.5rem;
+            margin-bottom: 18px;
+          }
+          .jqueryIcon {
+            margin: 0 auto;
+            width: 6rem;
+            margin-bottom: 35px;
+          }
+          .restful {
+            margin-bottom: 12px;
+          }
+          // .responsiveIcon {
+          //   margin: 0 auto;
+          //   width: 60px;
+          //   margin-bottom: 18px;
+          // }
+        }
+      }
+    }
+  }
+}
+}
+
+@media (max-width: 768px) {
+.intro {
+  background-color: $lightpink;
+  // height: 100vh;
+  .wrapper {
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    position: relative;
+    .introWrapper {
+      display: flex;
+      // height: 50vh;
+      padding: 0px 0px 50px 0px;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .introFig {
+        flex: 1 1 30%; //change
+        border-radius: 2px;
+        border: 5px solid $redpink;
+        object-fit: cover;
+        position: relative;
+                img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+        .handDrawnArrow {
+          width:80px;
+          fill: $redpink;
+          position: absolute;
+          left: -30px;
+          top: 0px;
+          z-index: 1;
+          transform: rotate(5deg);
+        }
+        .introImgNote {
+          fill: $redpink;
+          position: absolute;
+          left: -70px;
+          top: -70px;
+          color: $redpink;
+          transform: rotate(-20deg);
+        }
+        img {
+        }
+      }
+      .introContent {
+        margin: 0 auto; //change
+        flex: 1 1 calc(100%);//change
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .introHeading {
+          display: inline-block;
+          color: $redpink;
+          margin: 25px 5px 25px 30px;
+          text-align:left;
+          align-self:flex-start;
+          font-size: 2.35rem;
+          height:30px;
+        }
+        .introCopy {
+          color: $redpink;
+          text-align:justify;
+          margin: 0 30px;
+        }
+      }
+    }
+    .skillsHeading{
+      text-align:center;
+      align-self:center;
+    }
+    .skills {
+      // height: 50vh;
+      // background-color: $white;
+      padding: 50px 0px 25px 25px; 
+      margin: 0px 30px;
+      display: flex;
+      align-items: center;
+      border: solid 5px $redpink;
+      border-radius: 2px;
+      position: relative;
+
+      .toolboxNote {
+        fill: $redpink;
+        position: absolute;
+        right: 34%;
+        top: -80px;
+        color: $redpink;
+        transform: rotate(0deg);
+        text-align: right;
+      }
+      .handDrawnWrench {
+        width: 25px;
+        fill: $redpink;
+        position: absolute;
+        right: 26%;
+        top: -45px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          color: $redpink;
+          padding: 0 25px 25px 0;
+          font-size: 6rem; //change
+          text-align: center;
+          width: 100px; //change
+          p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+          }
+          .firebaseIcon {
+            margin: 0 auto;
+            width: 4.5rem;
+            margin-bottom: 18px;
+          }
+          .jqueryIcon {
+            margin: 0 auto;
+            width: 6rem;
+            margin-bottom: 22px;
+          }
+          .restful {
+            margin-bottom: 12px;
+          }
+          // .responsiveIcon {
+          //   margin: 0 auto;
+          //   width: 60px;
+          //   margin-bottom: 18px;
+          // }
+        }
+      }
+    }
+  }
+}
+}
+
+@media (max-width: 450px) {
+
+.intro {
+  background-color: $lightpink;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 50px 0px;
+    position: relative;
+    .introWrapper {
+      display: flex;
+      // height: 50vh;
+      padding: 0px 0px 50px 0px;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .introFig {
+        flex: 1 1 30%; //change
+        border-radius: 2px;
+        border: 5px solid $redpink;
+        object-fit: cover;
+        position: relative;
+                img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+        .handDrawnArrow {
+          width:80px;
+          fill: $redpink;
+          position: absolute;
+          left: 0px;
+          top: -30px;
+          z-index: 1;
+          transform: rotate(5deg);
+        }
+        .introImgNote {
+          fill: $redpink;
+          position: absolute;
+          left: -30px;
+          top: -100px;
+          color: $redpink;
+          transform: rotate(-10deg);
+        }
+        img {
+        }
+      }
+      .introContent {
+        margin: 0 auto; //change
+        flex: 1 1 calc(100%);//change
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .introHeading {
+          display: inline-block;
+          color: $redpink;
+          margin: 25px 0;
+          text-align:left;
+          // font-size: 1.6rem;
+          padding: 15px;
+          height: 60px;
+          align-self: flex-start;
+        }
+        .introCopy {
+          color: $redpink;
+          text-align:left;
+          font-size: 1.4rem;
+          margin: 0 15px;
+        }
+      }
+    }
+    .skillsHeading{
+      margin: 15px;
+      text-align:center;
+      align-self:center;
+    }
+
+    .skills {
+      // height: 50vh;
+      // background-color: $white;
+      padding: 30px 0px 25px 0px; 
+      margin: 0px 15px 0 15px;
+      display: flex;
+      align-items: center;
+      border: solid 5px $redpink;
+      border-radius: 2px;
+      position: relative;
+
+      .toolboxNote {
+        display:none;
+        fill: $redpink;
+        position: absolute;
+        right: 30%;
+        top: -80px;
+        color: $redpink;
+        transform: rotate(0deg);
+        text-align: right;
+      }
+      .handDrawnWrench {
+        display:none;
+        width: 25px;
+        fill: $redpink;
+        position: absolute;
+        right: 18%;
+        top: -45px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 0 0 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          color: $redpink;
+          padding: 5px 15px 5px 15px;
+          font-size: 6rem; //change
+          text-align: center;
+          width: 100px; //change
+          p {
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+          }
+          .firebaseIcon {
+            margin: 0 auto;
+            width: 4.5rem;
+            margin-bottom: 26px;
+          }
+          .jqueryIcon {
+            margin: 0 auto;
+            width: 6rem;
+            margin-bottom: 30px;
+          }
+          .restful {
+            margin-bottom: 10px;
+          }
+
+        }
+      }
+    }
+  }
+}
+}
+
+

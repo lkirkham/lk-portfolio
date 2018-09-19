@@ -1,0 +1,61 @@
+//contact me starts
+.contact{
+  background: $redpink;
+  padding: 50px 0;
+  h2 {
+    text-align:center;
+    color: $white;
+    padding:25px;
+    margin:0;
+  }
+  .icons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ul{
+      padding:0;
+      margin:0;
+      list-style-type: none;
+      li{
+        display:inline-block;
+        padding: 15px;
+        color:white;
+        font-size: 4rem;
+        &:hover{
+          color: $lightpink;
+        }
+        a{
+          color: $white;
+           &:hover{
+          color: $lightpink;
+        }
+        }
+
+      }
+    }
+  }
+}
+
+///////Media queries
+
+@media (max-width: 450px) {
+  .contact{
+  background: $redpink;
+  padding: 50px 0;
+  h2 {
+    text-align:center;
+    color: $white;
+    padding:15px;
+    margin:0;
+  }
+  ul {
+    li {
+      a {
+        
+      }
+    }
+  }
+}
+}
+//contact me ends
