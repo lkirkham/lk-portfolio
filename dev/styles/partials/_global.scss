@@ -6,7 +6,6 @@ $lightredpink: rgba(207, 68, 54, 0.5);
 $peach: #fba594;
 $grey: #4a4a4a;
 $white: #fff;
-$redpinklight: rgba(207, 68, 54, .8);
 
 html {
   font-size: 62.5%;
@@ -40,11 +39,12 @@ img{
   font-size: 4.5rem;
   border:none;
   &:hover{
-    color: pink;
+    // color: $lightpink;
+    animation-name: tada;
+    animation-duration:.8s;
    
   }
 }
-
 
 .wrapper {
   width: 1020px;

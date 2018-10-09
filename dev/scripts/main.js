@@ -25,8 +25,6 @@ var introHeading = new Typed("#introHeading", {
 //animate on scroll library
 AOS.init();
 
-
-
 // // You can also pass an optional settings object
 // // below listed default settings
 // AOS.init({
@@ -48,6 +46,8 @@ AOS.init();
 // });
 
 
+
+//nav
 (function () {
 
   var hamburger = {
@@ -55,7 +55,6 @@ AOS.init();
     nav: document.querySelector('nav'),
 
     doToggle: function (e) {
-      e.preventDefault();
       this.navToggle.classList.toggle('expanded');
       this.nav.classList.toggle('expanded');
     }

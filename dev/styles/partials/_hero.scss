@@ -2,14 +2,21 @@
 .hero {
   height: 100vh;
   background-image: url(../../assets/rawpixel-539830-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   text-align: center;
   color: $redpink;
   display: flex;
   align-items: center;
   justify-content: center;
+  //static bg
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+
+  //parallax bg
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero h1 {
   margin: 80px 0 15px 0;
@@ -26,6 +33,7 @@
   font-size: 7rem;
   padding: 25px;
   animation: 1s infinite  pulse;
+  z-index: 5;
 }
 
 //hero ends

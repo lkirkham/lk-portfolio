@@ -70,6 +70,13 @@
         .introCopy {
           color: $redpink;
         }
+        .scribble{
+        position: absolute;
+        width: 500px;
+        right:75px;
+        top: 450px;
+        transform: rotate(8deg);
+        }
       }
     }
     .skillsHeading{
@@ -77,6 +84,7 @@
       text-align:left;
       align-self:flex-start;
     }
+
     .skills {
       // height: 50vh;
       // background-color: $white;
@@ -136,13 +144,9 @@
             margin-bottom: 30px;
           }
           .restful {
-            // margin-bottom: 12px;
+            margin: 0 auto; 
+            margin-bottom: 12px;
           }
-          // .responsiveIcon {
-          //   margin: 0 auto;
-          //   width: 60px;
-          //   margin-bottom: 18px;
-          // }
         }
       }
     }
@@ -196,8 +200,6 @@
           color: $redpink;
           transform: rotate(-20deg);
         }
-        img {
-        }
       }
       .introContent {
         margin: 0 0 0 50px; //change
@@ -214,8 +216,16 @@
           color: $redpink;
           margin-top:0;
         }
+        .scribble{
+          position: absolute;
+          width: 500px;
+          right:30px;
+          top: 500px;
+          transform: rotate(8deg);
+        }
       }
     }
+
     .skills {
       // height: 50vh;
       // background-color: $white;
@@ -331,8 +341,6 @@
           color: $redpink;
           transform: rotate(-20deg);
         }
-        img {
-        }
       }
       .introContent {
         margin: 0 auto; //change
@@ -352,6 +360,13 @@
         .introCopy {
           color: $redpink;
           text-align:justify;
+        }
+        .scribble{
+          position: absolute;
+          width: 500px;
+          right:30px;
+          top: 725px;
+          transform: rotate(8deg);
         }
       }
     }
@@ -475,8 +490,6 @@
           color: $redpink;
           transform: rotate(-20deg);
         }
-        img {
-        }
       }
       .introContent {
         margin: 0 auto; //change
@@ -498,6 +511,13 @@
           color: $redpink;
           text-align:justify;
           margin: 0 30px;
+        }
+        .scribble{
+          position: absolute;
+          width: 400px;
+          right:30px;
+          top: 875px;
+          transform: rotate(8deg);
         }
       }
     }
@@ -624,8 +644,6 @@
           color: $redpink;
           transform: rotate(-10deg);
         }
-        img {
-        }
       }
       .introContent {
         margin: 0 auto; //change
@@ -649,6 +667,13 @@
           text-align:left;
           font-size: 1.4rem;
           margin: 0 15px;
+        }
+        .scribble{
+          position: absolute;
+          width: 275px;
+          right:20px;
+          top: 915px;
+          transform: rotate(8deg);
         }
       }
     }

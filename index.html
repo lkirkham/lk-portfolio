@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
@@ -15,19 +16,21 @@
 
 <body>
 
-    <header>
-      <div class="nav-toggle">
-        <div class="nav-toggle-bar"></div>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#intro">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <div class="wrapper">
+    <div class="nav-toggle">
+      <div class="nav-toggle-bar"></div>
+    </div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="hero">
     <div class="wrapper">
       <h1>Hi, I'm Laura.</h1>
@@ -57,18 +60,26 @@
         </figure>
         <div class="introContent">
           <h2 class="introHeading">I am&nbsp;<span id="introHeading"></span></h2>
-          <p class="introCopy"> 
-            I am a front-end developer and web designer with a background in digital marketing and product management. I love translating ideas into great user experiences and solving problems creatively through code.
-<br><br>
-            I first fell in love with web development when I was nine while adding an autoplaying midi file and sparkly cursor to my Neopets shop... and you should have seen my MySpace in 2004! Since I have worked with brands like Apple, Samsung, Freedom Mobile and Jackson-Triggs to create, design and manage a range of digital experiences.
-            
-          
-          <br><br>
-          <span class="bold">TL;DR</span> I had a really cool Neopets store with sparkly cursors when I was nine and now I am a web developer. Hire me!
-          
+          <p class="introCopy">
+            I am a front-end developer and web designer with a background in digital marketing and product management.
+            I love translating ideas into great user experiences and solving problems creatively through code.
+            <br><br>
+            I first fell in love with web development when I was nine while adding an autoplaying midi file and sparkly
+            cursor to my Neopets shop... and you should have seen my MySpace in 2004! Since then, I have worked with
+            brands like Apple, Samsung, Freedom Mobile and Jackson-Triggs to create, design and manage a range of
+            digital experiences.
+
+
+            <br><br>
+            <span class="bold">TL;DR</span> I had a really cool Neopets store with sparkly cursors when I was nine and
+            now I am a web developer!
           </p>
+                                    <div class="scribble">
+                                      <img src="./assets/scribble.svg" alt="scribbled line">
+                                    </div>
         </div>
       </div>
+
       <h2 id="skills" class="skillsHeading">Skills.</h2>
       <div class="skills">
         <!-- <p class="handWritten toolboxNote">I know stuff!</p> -->
@@ -174,8 +185,9 @@
       </div>
     </div>
   </section>
-  <section class="projects" >
-    <div id="portfolio" class="work" data-midnight="hamburgerPink"><h2>Selected Work.</h2>
+  <section class="projects">
+    <div id="portfolio" class="work" data-midnight="hamburgerPink">
+      <h2>Selected Work.</h2>
     </div>
     <div class="wrapper">
       <div class="project" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="600">
@@ -194,7 +206,8 @@
             Log in with Google and store your favourite bottles to your cellar.
           </p>
           <div class="buttons">
-            <a href="https://plonk-26f1b.firebaseapp.com" target="_blank" aria-label="Link to Plonk application demo." class="btn">View Live</a>
+            <a href="https://plonk-26f1b.firebaseapp.com" target="_blank" aria-label="Link to Plonk application demo."
+              class="btn">View Live</a>
             <a class="iconBtn" href="https://github.com/lkirkham/jeffLauraRita_project6" target="_blank"><i class="fab fa-github"></i></a>
           </div>
         </div>
@@ -210,7 +223,7 @@
 
         <p class="handWritten portfolioNote">My<br>personal<br>fave.</p>
         <p class="handWritten portfolioNote2">My personal fave.</p>
-        
+
         <!-- svg ends -->
       </div>
       <!-- closes portfolio note div -->
@@ -224,7 +237,8 @@
             <h5 class="projectTag">React</h5>
             <h5 class="projectTag">Firebase</h5>
           </div>
-          <p class="projectCopy">Plant Parenthood is an application that allows you to login and manage the care instructions for your entire plant family. 
+          <p class="projectCopy">Plant Parenthood is an application that allows you to login and manage the care
+            instructions for your entire plant family.
           </p>
           <div class="buttons">
             <a class="btn" href="https://plant-parenthood-3950f.firebaseapp.com/" target="_blank">View Live</a>
@@ -243,7 +257,8 @@
             <h5 class="projectTag">Sass</h5>
 
           </div>
-          <p class="projectCopy">An digital version of the 90's slumberparty staple: the cootie catcher. Give it a go and see if you'll ever end up marrying a backstreet boy!
+          <p class="projectCopy">An digital version of the 90's slumberparty staple: the cootie catcher. Give it a go
+            and see if you'll ever end up marrying a backstreet boy!
           </p>
           <div class="buttons">
             <a class="btn" href="http://lkirkham.com/cootiecatcher/" target="_blank">View Live</a>
@@ -262,7 +277,8 @@
             <h5 class="projectTag">CSS</h5>
             <h5 class="projectTag">Copywriting</h5>
           </div>
-          <p class="projectCopy">While at Freedom Mobile, I was the product owner for the brand website which included some front-end styling and copywriting in addition to overseeing internal/external site development. 
+          <p class="projectCopy">While at Freedom Mobile, I was the product owner for the brand website which included
+            some front-end styling and copywriting in addition to overseeing internal/external site development.
           </p>
           <div class="buttons">
             <a href="http://www.freedommobile.ca" class="btn">View Live</a>
@@ -271,25 +287,26 @@
       </div>
     </div>
   </section>
-<section id="contact" class="contact" data-midnight="hamburgerPink">
-  <div class="wrapper">
-  <h2>Let's work together!</h2>
-  <div class="icons">
-    <ul>
-      <li>
-        <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </li>
-      <li>
-        <a href="mailto:admin@lkirkham.com"><i class="fas fa-at"></i></a>
-      </li>
-    </ul>
+  <section id="contact" class="contact">
+    <div class="wrapper">
+      <h2>Let's work together!</h2>
+      <p>Send an email or message on LinkedIn.</p>
+      <div class="icons">
+        <ul>
+          <li>
+            <a href="mailto:admin@lkirkham.com"><i class="fas fa-at"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/laura-kirkham/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   </div>
-  </div>
-</section>
-</div>
-<footer>
-  <p>Laura Kirkham © 2018</p>
-</footer>
+  <footer>
+    <p>Laura Kirkham © 2018</p>
+  </footer>
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
     crossorigin='anonymous'></script>
   <script src='./public/scripts/main.js'></script>

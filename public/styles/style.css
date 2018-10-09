@@ -161,7 +161,8 @@ img {
   font-size: 4.5rem;
   border: none; }
   .iconBtn:hover {
-    color: pink; }
+    animation-name: tada;
+    animation-duration: .8s; }
 
 .wrapper {
   width: 1020px;
@@ -2827,9 +2828,7 @@ a {
   -ms-transition: right 0.5s ease;
   -o-transition: right 0.5s ease;
   transition: right 0.5s ease;
-  background: #4a4a4a;
-  color: #eed9d4;
-  cursor: pointer;
+  background: rgba(79, 79, 79, 0.75);
   font-size: 2rem;
   height: 100vh;
   right: -20rem;
@@ -2858,10 +2857,13 @@ a {
   .nav ul li {
     padding: 20px; }
     .nav ul li a {
-      color: #eed9d4;
+      color: #fff;
       text-decoration: none; }
       .nav ul li a:hover {
-        color: #cf4436; }
+        color: #fba594; }
+
+header .wrapper {
+  position: relative; }
 
 .nav-toggle {
   -webkit-user-select: none;
@@ -2869,7 +2871,7 @@ a {
   user-select: none;
   cursor: pointer;
   height: 2rem;
-  right: 2rem;
+  right: 4rem;
   position: fixed;
   top: 2rem;
   width: 3.6rem;
@@ -2920,17 +2922,50 @@ a {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
+@media (max-width: 450px) {
+  .nav ul {
+    position: relative;
+    top: 5%;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .nav ul li {
+      padding: 20px; }
+      .nav ul li a {
+        color: #eed9d4;
+        text-decoration: none; }
+        .nav ul li a:hover {
+          color: #cf4436; }
+  .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 2rem;
+    right: 0.5rem;
+    position: fixed;
+    top: 2rem;
+    width: 3.6rem;
+    z-index: 2; } }
+
 .hero {
   height: 100vh;
   background-image: url(../../assets/rawpixel-539830-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   text-align: center;
   color: #cf4436;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .hero h1 {
   margin: 80px 0 15px 0; }
@@ -2944,7 +2979,8 @@ a {
   color: #cf4436;
   font-size: 7rem;
   padding: 25px;
-  animation: 1s infinite  pulse; }
+  animation: 1s infinite  pulse;
+  z-index: 5; }
 
 @media (max-width: 1290px) {
   h1 {
@@ -3016,6 +3052,12 @@ a {
           margin: 0 0 15px 0; }
         .intro .wrapper .introWrapper .introContent .introCopy {
           color: #cf4436; }
+        .intro .wrapper .introWrapper .introContent .scribble {
+          position: absolute;
+          width: 500px;
+          right: 75px;
+          top: 450px;
+          transform: rotate(8deg); }
     .intro .wrapper .skillsHeading {
       margin: 15px 0;
       text-align: left;
@@ -3069,6 +3111,9 @@ a {
             margin: 0 auto;
             width: 65px;
             margin-bottom: 30px; }
+          .intro .wrapper .skills ul li .restful {
+            margin: 0 auto;
+            margin-bottom: 12px; }
 
 @media (max-width: 1290px) {
   .intro {
@@ -3120,6 +3165,12 @@ a {
           .intro .wrapper .introWrapper .introContent .introCopy {
             color: #cf4436;
             margin-top: 0; }
+          .intro .wrapper .introWrapper .introContent .scribble {
+            position: absolute;
+            width: 500px;
+            right: 30px;
+            top: 500px;
+            transform: rotate(8deg); }
       .intro .wrapper .skills {
         padding: 50px 0px 25px 25px;
         margin: 0 0 30px 0 0;
@@ -3229,6 +3280,12 @@ a {
           .intro .wrapper .introWrapper .introContent .introCopy {
             color: #cf4436;
             text-align: justify; }
+          .intro .wrapper .introWrapper .introContent .scribble {
+            position: absolute;
+            width: 500px;
+            right: 30px;
+            top: 725px;
+            transform: rotate(8deg); }
       .intro .wrapper .skills {
         padding: 50px 0px 25px 25px;
         margin: 0px 0px 0 0px;
@@ -3341,6 +3398,12 @@ a {
             color: #cf4436;
             text-align: justify;
             margin: 0 30px; }
+          .intro .wrapper .introWrapper .introContent .scribble {
+            position: absolute;
+            width: 400px;
+            right: 30px;
+            top: 875px;
+            transform: rotate(8deg); }
       .intro .wrapper .skillsHeading {
         text-align: center;
         align-self: center; }
@@ -3457,6 +3520,12 @@ a {
             text-align: left;
             font-size: 1.4rem;
             margin: 0 15px; }
+          .intro .wrapper .introWrapper .introContent .scribble {
+            position: absolute;
+            width: 275px;
+            right: 20px;
+            top: 915px;
+            transform: rotate(8deg); }
       .intro .wrapper .skillsHeading {
         margin: 15px;
         text-align: center;
@@ -3521,7 +3590,11 @@ a {
   .contact h2 {
     text-align: center;
     color: #fff;
-    padding: 25px;
+    padding: 25px 0 10px 0;
+    margin: 0; }
+  .contact p {
+    color: #fff;
+    text-align: center;
     margin: 0; }
   .contact .icons {
     display: flex;
@@ -3540,7 +3613,8 @@ a {
         .contact .icons ul li:hover {
           color: #eed9d4; }
         .contact .icons ul li a {
-          color: #fff; }
+          color: #fff;
+          font-size: 4rem; }
           .contact .icons ul li a:hover {
             color: #eed9d4; }
 
@@ -3611,11 +3685,14 @@ html {
           text-transform: uppercase;
           font-size: 1rem;
           color: #fff;
-          background-color: #4a4a4a;
+          background-color: #cf4436;
           border-radius: 2px; }
       .projects .wrapper .project .projectContent .projectCopy {
         margin: 0 0 16px 0;
         font-size: 1.4rem; }
+        .projects .wrapper .project .projectContent .projectCopy .contributors {
+          font-weight: 700;
+          color: #cf4436; }
       .projects .wrapper .project .projectContent .buttons {
         display: flex;
         align-items: center; }

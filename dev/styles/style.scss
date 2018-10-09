@@ -68,14 +68,19 @@ scroll-behavior: smooth;
             font-size: 1rem;
             color: $white;
             // background-color: $redpink;
-            background-color: $grey;
+            background-color: $redpink;
             border-radius: 2px;
           }
         }
         .projectCopy {
           margin: 0 0 16px 0;
           font-size: 1.4rem;
+          .contributors {
+            font-weight: 700;
+            color: $redpink;
+          }
         }
+
         .buttons {
           display: flex;
           align-items: center;
