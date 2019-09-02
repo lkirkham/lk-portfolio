@@ -2988,7 +2988,11 @@ header .wrapper {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 4rem; } }
+    font-size: 4rem;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 .intro {
   background: #eed9d4; }
@@ -3041,6 +3045,7 @@ header .wrapper {
           transform: rotate(8deg); }
       .intro .wrapper .introWrapper .introContent {
         margin: 0 0 0 50px;
+        position: relative;
         flex: 1 1 calc(60%);
         display: flex;
         flex-direction: column;
@@ -3052,12 +3057,6 @@ header .wrapper {
           margin: 0 0 15px 0; }
         .intro .wrapper .introWrapper .introContent .introCopy {
           color: #cf4436; }
-        .intro .wrapper .introWrapper .introContent .scribble {
-          position: absolute;
-          width: 500px;
-          right: 75px;
-          top: 450px;
-          transform: rotate(8deg); }
     .intro .wrapper .skillsHeading {
       margin: 15px 0;
       text-align: left;
@@ -3070,6 +3069,12 @@ header .wrapper {
       border: solid 5px #cf4436;
       border-radius: 2px;
       position: relative; }
+      .intro .wrapper .skills .scribble {
+        position: absolute;
+        width: 500px;
+        right: 75px;
+        top: -150px;
+        transform: rotate(8deg); }
       .intro .wrapper .skills .toolboxNote {
         fill: #cf4436;
         position: absolute;
@@ -3165,12 +3170,6 @@ header .wrapper {
           .intro .wrapper .introWrapper .introContent .introCopy {
             color: #cf4436;
             margin-top: 0; }
-          .intro .wrapper .introWrapper .introContent .scribble {
-            position: absolute;
-            width: 500px;
-            right: 30px;
-            top: 500px;
-            transform: rotate(8deg); }
       .intro .wrapper .skills {
         padding: 50px 0px 25px 25px;
         margin: 0 0 30px 0 0;
@@ -3179,6 +3178,12 @@ header .wrapper {
         border: solid 5px #cf4436;
         border-radius: 2px;
         position: relative; }
+        .intro .wrapper .skills .scribble {
+          position: absolute;
+          width: 500px;
+          right: 25px;
+          top: -150px;
+          transform: rotate(8deg); }
         .intro .wrapper .skills .toolboxNote {
           fill: #cf4436;
           position: absolute;
@@ -3238,6 +3243,7 @@ header .wrapper {
         padding: 0px 0px 50px 0px;
         align-items: center;
         flex-direction: column;
+        justify-content: flex-start;
         flex-wrap: wrap; }
         .intro .wrapper .introWrapper .introFig {
           flex: 1 1 30%;
@@ -3280,12 +3286,6 @@ header .wrapper {
           .intro .wrapper .introWrapper .introContent .introCopy {
             color: #cf4436;
             text-align: justify; }
-          .intro .wrapper .introWrapper .introContent .scribble {
-            position: absolute;
-            width: 500px;
-            right: 30px;
-            top: 725px;
-            transform: rotate(8deg); }
       .intro .wrapper .skills {
         padding: 50px 0px 25px 25px;
         margin: 0px 0px 0 0px;
@@ -3294,6 +3294,13 @@ header .wrapper {
         border: solid 5px #cf4436;
         border-radius: 2px;
         position: relative; }
+        .intro .wrapper .skills .scribble {
+          display: none;
+          position: absolute;
+          width: 500px;
+          right: 30px;
+          top: 725px;
+          transform: rotate(8deg); }
         .intro .wrapper .skills .toolboxNote {
           fill: #cf4436;
           position: absolute;

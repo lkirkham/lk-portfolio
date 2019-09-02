@@ -57,6 +57,7 @@
       }
       .introContent {
         margin: 0 0 0 50px;
+        position:relative;
         flex: 1 1 calc(60%);
         display:flex;
         flex-direction: column;
@@ -70,13 +71,14 @@
         .introCopy {
           color: $redpink;
         }
-        .scribble{
-        position: absolute;
-        width: 500px;
-        right:75px;
-        top: 450px;
-        transform: rotate(8deg);
-        }
+        // .scribble{
+        // position: absolute;
+        // width: 500px;
+        // right:75px;
+        // // top: 450px;
+        // bottom: -100px;
+        // transform: rotate(8deg);
+        // }
       }
     }
     .skillsHeading{
@@ -95,6 +97,15 @@
       border: solid 5px $redpink;
       border-radius: 2px;
       position: relative;
+
+      .scribble{
+        position: absolute;
+        width: 500px;
+        right:75px;
+        // top: 450px;
+        top: -150px;
+        transform: rotate(8deg);
+      }
 
       .toolboxNote {
         fill: $redpink;
@@ -216,13 +227,13 @@
           color: $redpink;
           margin-top:0;
         }
-        .scribble{
-          position: absolute;
-          width: 500px;
-          right:30px;
-          top: 500px;
-          transform: rotate(8deg);
-        }
+        // .scribble{
+        //   position: absolute;
+        //   width: 500px;
+        //   right:30px;
+        //   top: 500px;
+        //   transform: rotate(8deg);
+        // }
       }
     }
 
@@ -236,6 +247,14 @@
       border: solid 5px $redpink;
       border-radius: 2px;
       position: relative;
+
+      .scribble {
+        position: absolute;
+        width: 500px;
+        right: 25px;
+        top: -150px;
+        transform: rotate(8deg);
+      }
 
       .toolboxNote {
         fill: $redpink;
@@ -312,6 +331,7 @@
       padding: 0px 0px 50px 0px;
       align-items: center;
       flex-direction: column;
+      justify-content: flex-start;
       flex-wrap: wrap;
       .introFig {
         flex: 1 1 30%; //change
@@ -361,13 +381,6 @@
           color: $redpink;
           text-align:justify;
         }
-        .scribble{
-          position: absolute;
-          width: 500px;
-          right:30px;
-          top: 725px;
-          transform: rotate(8deg);
-        }
       }
     }
     .skills {
@@ -380,6 +393,15 @@
       border: solid 5px $redpink;
       border-radius: 2px;
       position: relative;
+
+      .scribble{
+        display:none;
+        position: absolute;
+        width: 500px;
+        right:30px;
+        top: 725px;
+        transform: rotate(8deg);
+        }
 
       .toolboxNote {
         fill: $redpink;

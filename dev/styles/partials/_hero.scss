@@ -1,7 +1,7 @@
 //hero starts
 .hero {
   height: 100vh;
-  background-image: url(../../assets/rawpixel-539830-unsplash.jpg);
+  background-image: url(../../assets/bg.jpg);
   text-align: center;
   color: $redpink;
   display: flex;
@@ -46,6 +46,10 @@
 @media (max-width: 768px) {
       h1{
       font-size: 4rem;
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 }
 
